@@ -3,6 +3,7 @@
 #Daniela Batz 19214
 import simpy
 import random
+from multiprocessing import Pool
 
 #new
 #1=ocupado
@@ -25,8 +26,12 @@ def espera(numero,env,memoria):
             print ("Pasara al sigueinte")
         elif puesto1 == 0:
             print ("Espere esta ocupado")
- 
-        while memoria <= 100:
+            
+def proces(procesos):
+    procesos=50
+    return procesos
+if RAM <10:
+    p=Pool(50)
             
 #
 env = simpy.Environment() #crear ambiente de simulacion
