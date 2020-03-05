@@ -4,6 +4,7 @@
 import simpy
 import random
 from multiprocessing import Pool
+from pylab import *
 
 #new
 #1=ocupado
@@ -32,6 +33,9 @@ def proces(procesos):
     return procesos
 if RAM <10:
     p=Pool(50)
+    x = arange(10.)
+    plot(x,p)
+    show()
             
 #
 env = simpy.Environment() #crear ambiente de simulacion
