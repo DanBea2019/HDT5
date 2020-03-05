@@ -3,5 +3,19 @@
 #Daniela Batz 19214
 import simpy
 import random
-num = [1,2,3,4,5,6,7,8,9,10]
-print random(num)
+
+#new
+#1=ocupado
+#0=libre
+def tiempo(num):
+    puestos=[0,0,0,0,0,0,0,0,0,0]
+    puesto1=[]
+    num=random.random(0,10)
+    for elemento in puestos:
+        elemento = 1
+    puesto1.append(elemento)
+    print ("Su numero es: ", num)
+    if puesto1 == 1:
+        print ("Pasara al sigueinte")
+    elif puesto1 == 0:
+        print ("Espere esta ocupado")
